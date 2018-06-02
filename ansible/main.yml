@@ -1,0 +1,20 @@
+- hosts: local
+  connection: local
+
+  tasks:
+  - name: update homebrew
+    homebrew:
+      state: latest
+      update_homebrew: yes
+
+  - name: install brews
+    homebrew:
+      name: "{{item}}"
+      state: latest
+    with_items: "{{applications}}"
+
+  - name: install casks
+    homebrew_cask:
+      name: "{{item}}"
+      state: installed 
+    with_items: "{{cask_applications}}"
