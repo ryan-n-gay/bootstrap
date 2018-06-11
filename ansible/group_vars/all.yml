@@ -1,0 +1,26 @@
+# homebrew applications
+applications:
+  - git
+  - go
+  - terraform
+  - fish
+  - python3
+  - npm
+  - awscli
+  - ruby
+
+# homebrew cask applications
+cask_applications:
+  - keybase
+  - firefox
+  - google-chrome
+  - slack
+  - iterm2
+  - caffeine
+  - docker
+  - vagrant
+  - alfred
+  - virtualbox
+  - spotify
+  - google-drive-file-stream
+  - visual-studio-code
