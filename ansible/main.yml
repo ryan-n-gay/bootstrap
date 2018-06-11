@@ -3,6 +3,9 @@
 
   tasks:
   - command: sudo hash
+    tags:
+      - brews
+      - casks
   
   - name: Allow Touch ID for sudo
     lineinfile:
@@ -21,9 +24,11 @@
       name: "{{item}}"
       state: latest
     with_items: "{{applications}}"
+    tags: brews
 
   - name: install casks
     homebrew_cask:
       name: "{{item}}"
       state: installed 
     with_items: "{{cask_applications}}"
+    tags: casks
