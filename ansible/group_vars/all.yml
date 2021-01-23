@@ -1,26 +1,39 @@
 # homebrew applications
 applications:
+  - cowsay 
   - git
-  - go
-  - terraform
-  - fish
   - python3
   - npm
   - awscli
-  - ruby
+  # - mas
 
 # homebrew cask applications
 cask_applications:
   - keybase
   - firefox
-  - google-chrome
-  - slack
+  - brave-browser
   - iterm2
   - caffeine
-  - docker
-  - vagrant
-  - alfred
-  - virtualbox
-  - spotify
-  - google-drive-file-stream
+  - obs
   - visual-studio-code
+  - github
+  - discord
+  - vnc-viewer
+  - teamviewer
+  # - logitch-options
+  - gas-mask
+  - balenaetcher
+  - nvidia-geforce-now
+
+#   # Appstore Applications via MAS
+# mas_apps:
+#   - { id: 1333542190, name: "1Password" }
+#   - { id: 1295203466, name: "Microsoft Remote Desktop" }
+#   - { id: 441258766, name: "Magnet" }
+#   - { id: 1472777122, name: "Honey for Safari" }
+#   - { id: 1289583905, name: "Pixelmator Pro" }
+#   - { id: 640199958, name: "Apple Developer" }
+#   - { id: 775737590, name: "iA Writer" }
+#   - { id: 409201541, name: "Pages" }
+#   - { id: 409203825, name: "Numbers" }
+#   - { id: 409183694, name: "Keynote" }

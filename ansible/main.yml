@@ -6,13 +6,7 @@
     tags:
       - brews
       - casks
-  
-  - name: Allow Touch ID for sudo
-    lineinfile:
-      path: /etc/pam.d/sudo
-      insertbefore: BOF
-      line: 'auth sufficient pam_tid.so'
-    become: true
+      - mas
 
   - name: update homebrew
     homebrew:
@@ -32,3 +26,10 @@
       state: installed 
     with_items: "{{cask_applications}}"
     tags: casks
+
+  - name: install mac apps
+    mas_installed_apps:
+      name: "{{item}}"
+      state: installed
+    with_items: mas_apps
+    tags: mas
