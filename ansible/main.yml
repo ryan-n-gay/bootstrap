@@ -28,8 +28,6 @@
     tags: casks
 
   - name: install mac apps
-    mas_installed_apps:
-      name: "{{item}}"
-      state: installed
-    with_items: mas_apps
+    command: mas install {{item}}
+    with_items: "{{mas_apps}}"
     tags: mas
